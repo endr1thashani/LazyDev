@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    @apply scroll-smooth;
+} 
+
+.container{
+    @apply w-full h-screen max-h-[600px] max-w-[1240] mx-auto flex flex-col md:flex-row items-center justify-evenly;
+}
+
+.btn{
+    @apply px-[18px] py-[12px] mt-[30px] text-[18px] flex items-center rounded-md text-white bg-gradient-to-r from-[#00796D] to-[#38C682]
+}
+
+.para{
+    @apply text-[17px] text-white font-medium mt-[10px]
+}
+
+.primary{
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#00796D] to-[#38C682]
+}
+
+.tab__content{
+    @apply outline-none focus:hidden m-[25px] text-white text-[18px] md:text-[22px] font-medium hover:text-[#38C682] hover:border-b-2 border-[#38C682] hover:font-bold
+}
+
+.line{
+    @apply w-[80%] bg-gradient-to-r from-[#00796D] to-[#38C682] h-[1px] mb-[10px]
+}
+
+.menu{
+    @apply text-white font-bold text-[18px]
+}
+
+.list{
+    @apply text-[#B6B8BC] text-[18px] font-normal mt-[16px]  hover:text-[#38C682] 
+}
+
+.icon{
+    @apply text-[#38C682] hover:text-[#00796D]
+}
+
+.s-text{
+    @apply text-[#303030] text-[16px] sm:text-[18px]
+}
