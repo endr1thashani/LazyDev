@@ -14,7 +14,7 @@ const Footer = () => {
           <div className='flex flex-col items-center justify-evenly w-full'>
 
             <div className='flex items-center justify-evenly flex-wrap mt-[10px] w-full max-w-[80%] md:max-w-[86%]'>
-                <h1 className='text-white font-semibold text-[18px] sm:text-[25px] md:text-[34px] lg:text-[44px]'>Let’s discuss and bring your vision to life.</h1>
+                <h1 className='text-white font-semibold text-[18px] sm:text-[25px] md:text-[34px] lg:text-[44px]'>Let’s bring your vision to life.</h1>
                 <Link to='/contact' className='mb-[20px]'>
                   <button className='btn mb-[10px] md:mb-[30px]'>Let's Talk <img src={arrow} alt='arrow'/></button>
                 </Link>
@@ -98,7 +98,7 @@ const Footer = () => {
             <div className='flex flex-col items-center w-full justify-around mt-[-60px] md:mt-0'>
               <div className='line'></div>  
 
-              <p className='text-[#B6B8BC] mt-[40px] sm:mt-[50px] mb-[20px]'>
+              <p className='text-[#B6B8BC] text-[14px] md:text-[18px] mt-[40px] sm:mt-[50px] mb-[20px]'>
                 Copyright © 2023 by LazyDev. All rights reserved.
               </p>     
             </div> 

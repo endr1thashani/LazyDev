@@ -12,7 +12,7 @@ const WhatWeDo = () => {
   }, [])
   return (
     <div className='w-full h-screen max-h-[600px] max-w-[1240] mx-auto flex flex-col items-center mt-[40px] md:mt-[70px] mb-[40px]'>
-        <h1 className='text-[30px] sm:text-[40px] md:text-[50px] lg:text-[70px] font-bold' data-aos="zoom-in" data-aos-duration="1200">The Services We Offer <span className='primary'>For</span> You</h1>
+        <h1 className='text-[30px] sm:text-[40px] md:text-[50px] lg:text-[70px] font-bold' data-aos="zoom-in" data-aos-duration="1200">The Services We <span className='primary'>Offer</span></h1>
 
         <div className='flex w-full max-w-[1240px] flex-wrap mx-auto items-center justify-evenly mt-[30px] md:mt-[70px]'>
           {

@@ -5,13 +5,12 @@
 html{
     @apply scroll-smooth;
 } 
-
 .container{
     @apply w-full h-screen max-h-[600px] max-w-[1240] mx-auto flex flex-col md:flex-row items-center justify-evenly;
 }
 
 .btn{
-    @apply px-[18px] py-[12px] mt-[30px] text-[18px] flex items-center rounded-md text-white bg-gradient-to-r from-[#00796D] to-[#38C682]
+    @apply px-[15px] py-[9px] md:px-[18px] md:py-[12px] mt-[30px] text-[14px] md:text-[18px] flex items-center rounded-md text-white bg-gradient-to-r from-[#00796D] to-[#38C682]
 }
 
 .para{
@@ -43,5 +42,21 @@ html{
 }
 
 .s-text{
-    @apply text-[#303030] text-[16px] sm:text-[18px]
+    @apply text-[#303030] text-[13px] sm:text-[18px]
+}
+
+input{
+    @apply outline-none rounded-[5px]  p-[2px] border-[1px]  w-[100%] text-[13px] md:text-[16px] mt-[5px] text-[#303030]  border-[#38C682] focus:border-[#00796D] focus:ring-1 focus:ring-[#00796D]
+}
+
+label{
+    @apply font-bold text-[#303030] text-[14px] md:text-[17px]
+}
+
+textarea{
+    @apply  rounded-[5px] min-h-[100px] p-[2px] w-[100%] border-[1px] border-[#38C682] outline-none  text-[13px] md:text-[16px] mt-[5px] text-[#303030] focus:border-[#00796D] focus:ring-1 focus:ring-[#00796D]
+}
+
+.text__contact{
+    @apply mt-[5px] text-[12px] md:text-[14px] font-bold hover:text-[#38C682]
 }
