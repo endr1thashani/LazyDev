@@ -29,14 +29,14 @@ const Testimonial = () => {
 
     
   return (
-    <div className='max-w-[896px] h-[396px] w-full mr-[20px] md:m-auto mt-[60px] px-6 relative group' data-aos="zoom-in" data-aos-duration="1200">
-    <div className='w-full h-full bg-[#5a585c] rounded-md '>
+    <div className='max-w-[896px] h-[396px] w-full mr-[20px] md:m-auto px-6  group' data-aos="zoom-in" data-aos-duration="1200">
+    <div className='w-full h-full bg-[#5a585c] rounded-md'>
       {slides.map((slide, index) => (
         <div
           key={index}
           className={`slide ${index === currentIndex ? 'active' : 'hidden'}`}
         >
-          <div className='relative flex flex-col h-[200px] max-w-[654px] mx-auto mt-[100px]'>
+          <div className=' flex flex-col h-[200px] max-w-[654px] mx-auto mt-[100px]'>
           <div className='text-white text-[14px] px-[35px] md:text-[22px] md:px-0 font-semibold mt-[100px]'> {slide.text}</div>
           <div className='flex px-[35px] mt-[45px] md:px-0'>
               <div className='primary text-[14px] md:text-[20px] font-bold'>{slide.person}</div>

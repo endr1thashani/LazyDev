@@ -6,7 +6,7 @@ import arrow from '../../assets/icons/aright.svg'
 import logo from '../../assets/images/lazydev.svg'
 const Footer = () => {
   return ( 
-    <div className='mt-[150px] w-full p-[10px] bg-[#40394A] flex flex-col items-center'>
+    <div className='w-full p-[10px] bg-[#40394A] flex flex-col items-center'>
         
         <div className='flex flex-col items-center justify-evenly w-full'>
 

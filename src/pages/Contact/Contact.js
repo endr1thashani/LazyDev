@@ -1,9 +1,14 @@
-import React , { useRef } from 'react'
+import React , { useEffect , useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify'
 import { BsBuildings } from 'react-icons/bs'
 import { GrMapLocation } from 'react-icons/gr'
 import { FiPhoneCall } from 'react-icons/fi'
+import cot from '../../assets/images/back.png'
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Contact = () => {
 
   const form = useRef()
@@ -14,12 +19,12 @@ const Contact = () => {
       .then((result) => {
           console.log(result.text);
           toast.success('Message Sent!', {
-            position: "top-center",
+            position: "bottom-left",
             autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
+            pauseOnHover: false,
+            draggable: false,
             progress: undefined,
             theme: "light",
             });
@@ -30,8 +35,22 @@ const Contact = () => {
       e.target.reset()
   };
 
+      useEffect(() => {
+        AOS.init()
+        AOS.refresh()
+    }, [])
+
+
   return (
-    <div className='flex w-full mx-auto max-w-[1240px] items-center justify-evenly flex-col md:flex-row mt-[60px]'>
+    <div className='flex h-full p-[20px] w-full items-center justify-evenly flex-col bg-[#40394A]'>
+            <img className='absolute w-full h-full min-h-[900px] md:min-h-[640px] object-cover' src={cot} alt='hero'/>
+      <div className='relative w-full mt-[40px] mx-auto max-w-[1240px] items-start'>
+        <div>
+          <h1 className='text-white p-[3px] font-bold text-[20px]  md:text-[40px]' data-aos="zoom-in" data-aos-duration="1200">Contact Us</h1>
+        </div>
+      </div>
+      <div className='relative flex w-full mx-auto max-w-[1240px] bg-white items-center border-[#00796D] justify-evenly p-[10px] md:p-[40px] flex-col md:flex-row border-[3px] rounded-bl-[140px] rounded-tr-[140px]' data-aos="zoom-in" data-aos-duration="1200">
+
       <form ref={form} onSubmit={sendEmail} className='min-w-[300px] max-w-[400px] p-[20px] '>
         <div className='flex flex-col'>
           <label htmlFor="name">Name:</label>
@@ -59,7 +78,7 @@ const Contact = () => {
           <div className='flex items-center justify-center p-[5px] rounded-md bg-gray-200'>
             <BsBuildings size={50}/>
           </div>
-          <p className='mt-[5px] text-[12px] md:text-[14px] font-bold'>LazyDev LLC</p>
+          <p className='mt-[5px] text-[12px] md:text-[14px] font-bold text-white'>LazyDev LLC</p>
         </div>
         <div className='flex flex-col items-center my-[40px]'>
           <div className='flex items-center justify-center p-[5px] rounded-md bg-gray-200'>
@@ -75,6 +94,9 @@ const Contact = () => {
         </div>
       </div>
 
+
+      </div>
+      <div className='w-full h-[1px] my-[30px]'></div>
 
     </div>
   )

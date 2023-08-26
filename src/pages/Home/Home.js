@@ -4,6 +4,7 @@ import WhatWeDo from './homeComponents/WhatWeDo'
 import Banner from './homeComponents/Banner'
 import Content from './homeComponents/Content'
 import Testimonial from './homeComponents/Testimonial'
+import Space from './homeComponents/Space'
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
       <Banner/>
       <Content/>
       <Testimonial/>
+      <Space/>
     </div>
   )
 }

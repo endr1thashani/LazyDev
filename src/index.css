@@ -46,11 +46,11 @@ html{
 }
 
 input{
-    @apply outline-none rounded-[5px]  p-[2px] border-[1px]  w-[100%] text-[13px] md:text-[16px] mt-[5px] text-[#303030]  border-[#38C682] focus:border-[#00796D] focus:ring-1 focus:ring-[#00796D]
+    @apply outline-none rounded-[5px]  p-[2px] border-b-[2px]  w-[100%] text-[13px] md:text-[16px] mt-[5px] text-[#303030]  border-b-[#38C682] focus:border-[#00796D] focus:ring-1 focus:ring-[#00796D]
 }
 
 label{
-    @apply font-bold text-[#303030] text-[14px] md:text-[17px]
+    @apply font-bold text-[14px] md:text-[17px]
 }
 
 textarea{
